@@ -1,0 +1,103 @@
+.header {
+	display: grid;
+	grid-template-columns: 1fr 9fr;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.logo {
+	background-image: url(../images/logo.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border: 3px white solid;
+	border-radius: 50%;
+	height: 15vh;
+	width: 15vh;
+}
+
+.menu {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+li {
+	list-style: none;
+	text-align: center;
+	font-family: Bebas Neue;
+	grid-gap: 2px;
+	padding: 10px;	
+	color: white;
+	border: 3px white solid;
+}
+
+ul {
+	padding: 0px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2,1fr);
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../images/home.jpg);
+	background-position: top;
+	background-size: cover;
+}
+
+#slideshow {
+	border: 3px white solid;
+	overflow: hidden;
+	height: 510px;
+	width: 728px;
+	margin: 0 auto;
+}
+
+.slide-wrapper {
+	width: 2912px;
+	-webkit-animation: slide 5s ease infinite;
+}
+
+.slide {
+	float: left;
+	height: 510px;
+	width: 728px;
+}
+
+.slide:nth-child(1) {
+	background-image: url(../images/1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.slide:nth-child(2) {
+	background-image: url(../images/2.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+.slide:nth-child(3) {
+	background-image: url(../images/3.jpg);
+	background-position: center;
+	background-size: contain;
+}
+
+.slide:nth-child(4) {
+	background-image: url(../images/4.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@-webkit-keyframes slide {
+	20% {margin-left: 0px;}
+	30% {margin-left: -728px;}
+	50% {margin-left: -728px;}
+	60% {margin-left: -1456px;}
+	70% {margin-left: -1456px;}
+	80% {margin-left: -2184px;}
+	90% {margin-left: -2184px;}
+}
